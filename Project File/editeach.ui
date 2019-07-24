@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>EdiTeach</class>
+ <widget class="QDialog" name="EdiTeach">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>751</width>
+    <height>409</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <pointsize>11</pointsize>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>Add/Remove Account</string>
+  </property>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>30</y>
+     <width>691</width>
+     <height>341</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="ARTLayout">
+    <item>
+     <widget class="QGroupBox" name="ATGBox">
+      <property name="title">
+       <string>Add Teacher</string>
+      </property>
+      <widget class="QPushButton" name="AddT">
+       <property name="geometry">
+        <rect>
+         <x>230</x>
+         <y>290</y>
+         <width>93</width>
+         <height>28</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Add</string>
+       </property>
+      </widget>
+      <widget class="QWidget" name="layoutWidget">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>40</y>
+         <width>331</width>
+         <height>221</height>
+        </rect>
+       </property>
+       <layout class="QHBoxLayout" name="ATLayout">
+        <item>
+         <layout class="QVBoxLayout" name="ATLLayout">
+          <item>
+           <widget class="QLabel" name="label">
+            <property name="text">
+             <string>Name</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_2">
+            <property name="text">
+             <string>Username</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_3">
+            <property name="text">
+             <string>Password</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_4">
+            <property name="text">
+             <string>Retype Password</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QVBoxLayout" name="ATELayout">
+          <item>
+           <widget class="QLineEdit" name="LName"/>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="LUserName"/>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="LPassword">
+            <property name="echoMode">
+             <enum>QLineEdit::Password</enum>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="LRetype">
+            <property name="echoMode">
+             <enum>QLineEdit::Password</enum>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+    <item>
+     <widget class="QGroupBox" name="RTGBox">
+      <property name="title">
+       <string>Remove Teacher</string>
+      </property>
+      <widget class="QPushButton" name="RemT">
+       <property name="geometry">
+        <rect>
+         <x>230</x>
+         <y>290</y>
+         <width>93</width>
+         <height>28</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Remove</string>
+       </property>
+      </widget>
+      <widget class="QWidget" name="layoutWidget">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>70</y>
+         <width>291</width>
+         <height>141</height>
+        </rect>
+       </property>
+       <layout class="QHBoxLayout" name="RTLayout">
+        <item>
+         <layout class="QVBoxLayout" name="RTLLayout">
+          <item>
+           <widget class="QLabel" name="label_6">
+            <property name="text">
+             <string>Username</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_5">
+            <property name="text">
+             <string>Password</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QVBoxLayout" name="RTELayout">
+          <item>
+           <widget class="QLineEdit" name="RUsername"/>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="RPassword">
+            <property name="echoMode">
+             <enum>QLineEdit::Password</enum>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QPushButton" name="CancelT">
+   <property name="geometry">
+    <rect>
+     <x>580</x>
+     <y>370</y>
+     <width>93</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Cancel</string>
+   </property>
+  </widget>
+ </widget>
+ <tabstops>
+  <tabstop>LName</tabstop>
+  <tabstop>LUserName</tabstop>
+  <tabstop>LPassword</tabstop>
+  <tabstop>LRetype</tabstop>
+  <tabstop>AddT</tabstop>
+  <tabstop>RUsername</tabstop>
+  <tabstop>RPassword</tabstop>
+  <tabstop>RemT</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>

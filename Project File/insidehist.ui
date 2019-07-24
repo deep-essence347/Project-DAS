@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>insideHist</class>
+ <widget class="QDialog" name="insideHist">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>568</width>
+    <height>669</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <family>Georgia</family>
+    <pointsize>12</pointsize>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>History</string>
+  </property>
+  <widget class="QTableView" name="tableView">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>110</y>
+     <width>521</width>
+     <height>511</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>210</x>
+     <y>10</y>
+     <width>357</width>
+     <height>91</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="SLPRLayout">
+    <item>
+     <layout class="QHBoxLayout" name="SLELayout">
+      <item>
+       <widget class="QLineEdit" name="search_edit"/>
+      </item>
+      <item>
+       <widget class="QPushButton" name="search">
+        <property name="text">
+         <string>Search</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="SRBSLayout">
+      <item>
+       <spacer name="SRbSpacer">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QLabel" name="label">
+        <property name="text">
+         <string>Search by:</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QRadioButton" name="RName">
+        <property name="text">
+         <string>Name</string>
+        </property>
+        <property name="checked">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QRadioButton" name="RRoll">
+        <property name="text">
+         <string>Roll No.</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>20</y>
+     <width>90</width>
+     <height>88</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="SHGTLayout">
+    <item>
+     <widget class="QLabel" name="HGroup">
+      <property name="text">
+       <string>Group</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="HYear">
+      <property name="text">
+       <string>Year</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="HSem">
+      <property name="text">
+       <string>Sem</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QPushButton" name="BackIH">
+   <property name="geometry">
+    <rect>
+     <x>450</x>
+     <y>630</y>
+     <width>93</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Back</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="refreshH">
+   <property name="geometry">
+    <rect>
+     <x>110</x>
+     <y>50</y>
+     <width>93</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Refresh</string>
+   </property>
+  </widget>
+ </widget>
+ <tabstops>
+  <tabstop>search_edit</tabstop>
+  <tabstop>search</tabstop>
+  <tabstop>RName</tabstop>
+  <tabstop>RRoll</tabstop>
+  <tabstop>BackIH</tabstop>
+  <tabstop>tableView</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>
